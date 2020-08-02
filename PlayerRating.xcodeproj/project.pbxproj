@@ -13,6 +13,11 @@
 		6CEB410924D740AD00D74A3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CEB410724D740AD00D74A3F /* Main.storyboard */; };
 		6CEB410B24D740B300D74A3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CEB410A24D740B300D74A3F /* Assets.xcassets */; };
 		6CEB410E24D740B300D74A3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CEB410C24D740B300D74A3F /* LaunchScreen.storyboard */; };
+		6CEB411624D7491000D74A3F /* WebManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEB411524D7491000D74A3F /* WebManager.swift */; };
+		6CEB411E24D74B7500D74A3F /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEB411D24D74B7500D74A3F /* Player.swift */; };
+		6CEB412124D74BF800D74A3F /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEB412024D74BF800D74A3F /* Rating.swift */; };
+		6CEB412424D74E6000D74A3F /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEB412224D74E6000D74A3F /* PlayerCell.swift */; };
+		6CEB412524D74E6000D74A3F /* PlayerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CEB412324D74E6000D74A3F /* PlayerCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		6CEB410A24D740B300D74A3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CEB410D24D740B300D74A3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6CEB410F24D740B300D74A3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CEB411524D7491000D74A3F /* WebManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebManager.swift; sourceTree = "<group>"; };
+		6CEB411D24D74B7500D74A3F /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		6CEB412024D74BF800D74A3F /* Rating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
+		6CEB412224D74E6000D74A3F /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
+		6CEB412324D74E6000D74A3F /* PlayerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,76 @@
 		6CEB410024D740AD00D74A3F /* PlayerRating */ = {
 			isa = PBXGroup;
 			children = (
-				6CEB410124D740AD00D74A3F /* AppDelegate.swift */,
-				6CEB410324D740AD00D74A3F /* SceneDelegate.swift */,
-				6CEB410524D740AD00D74A3F /* ViewController.swift */,
-				6CEB410724D740AD00D74A3F /* Main.storyboard */,
-				6CEB410A24D740B300D74A3F /* Assets.xcassets */,
-				6CEB410C24D740B300D74A3F /* LaunchScreen.storyboard */,
-				6CEB410F24D740B300D74A3F /* Info.plist */,
+				6CEB412624D74E6300D74A3F /* View */,
+				6CEB411824D74AF700D74A3F /* Service */,
+				6CEB411C24D74B4B00D74A3F /* ViewController */,
+				6CEB411F24D74B7C00D74A3F /* Model */,
+				6CEB411924D74B0300D74A3F /* Storyboard */,
+				6CEB411A24D74B1500D74A3F /* Resources */,
+				6CEB411B24D74B2E00D74A3F /* App */,
 			);
 			path = PlayerRating;
+			sourceTree = "<group>";
+		};
+		6CEB411824D74AF700D74A3F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				6CEB411524D7491000D74A3F /* WebManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		6CEB411924D74B0300D74A3F /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				6CEB410724D740AD00D74A3F /* Main.storyboard */,
+				6CEB410C24D740B300D74A3F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		6CEB411A24D74B1500D74A3F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6CEB410A24D740B300D74A3F /* Assets.xcassets */,
+				6CEB410F24D740B300D74A3F /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6CEB411B24D74B2E00D74A3F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6CEB410124D740AD00D74A3F /* AppDelegate.swift */,
+				6CEB410324D740AD00D74A3F /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		6CEB411C24D74B4B00D74A3F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6CEB410524D740AD00D74A3F /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		6CEB411F24D74B7C00D74A3F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6CEB411D24D74B7500D74A3F /* Player.swift */,
+				6CEB412024D74BF800D74A3F /* Rating.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6CEB412624D74E6300D74A3F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6CEB412224D74E6000D74A3F /* PlayerCell.swift */,
+				6CEB412324D74E6000D74A3F /* PlayerCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +196,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CEB412524D74E6000D74A3F /* PlayerCell.xib in Resources */,
 				6CEB410E24D740B300D74A3F /* LaunchScreen.storyboard in Resources */,
 				6CEB410B24D740B300D74A3F /* Assets.xcassets in Resources */,
 				6CEB410924D740AD00D74A3F /* Main.storyboard in Resources */,
@@ -138,8 +210,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CEB412124D74BF800D74A3F /* Rating.swift in Sources */,
+				6CEB411624D7491000D74A3F /* WebManager.swift in Sources */,
+				6CEB412424D74E6000D74A3F /* PlayerCell.swift in Sources */,
 				6CEB410624D740AD00D74A3F /* ViewController.swift in Sources */,
 				6CEB410224D740AD00D74A3F /* AppDelegate.swift in Sources */,
+				6CEB411E24D74B7500D74A3F /* Player.swift in Sources */,
 				6CEB410424D740AD00D74A3F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,7 +362,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KWAG9NLQG9;
-				INFOPLIST_FILE = PlayerRating/Info.plist;
+				INFOPLIST_FILE = PlayerRating/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +380,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KWAG9NLQG9;
-				INFOPLIST_FILE = PlayerRating/Info.plist;
+				INFOPLIST_FILE = PlayerRating/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
